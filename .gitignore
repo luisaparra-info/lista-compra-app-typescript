@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+
+# Dependencias específicas del entorno (pueden generarse al instalar dependencias)
+npm-debug.log
+yarn-error.log
+
+# Archivos de configuración de VSCode
+.vscode/
+
+# Archivos de entorno
+.env
+
+# Archivos de log
+*.log
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos compilados de TypeScript (si los estás usando)
+dist/
