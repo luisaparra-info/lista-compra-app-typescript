@@ -3,11 +3,16 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/node": "^22.13.13",
+    "copyfiles": "^2.4.1",
     "typescript": "^5.8.2"
   },
   "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2"
-  }
+  },
+  "scripts": {
+  "build": "rm -rf dist && tsc && copyfiles -u 2 src/public/** dist/public",
+  "start": "node dist/server.js"
+}
 }

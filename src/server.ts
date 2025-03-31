@@ -20,11 +20,11 @@ interface ListaItems {
 // Configurar middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(process.cwd(), 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Ruta para servir el archivo index.html
 app.get('/', (req: Request, res: Response) => {
-  res.sendFile(path.join(process.cwd(), 'views', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Ruta para obtener los items desde el archivo JSON
